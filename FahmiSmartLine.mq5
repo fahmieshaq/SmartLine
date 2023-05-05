@@ -17,6 +17,7 @@ double lastClosePrice = 0.0;
 int OnInit()
   {
 //--- indicator buffers mapping
+   // Shows up on your chart at top left corner
    ChartSetString(ChartID(), CHART_COMMENT, "Fahmi's SmartLine Indicator");
 //---
    return(INIT_SUCCEEDED);
@@ -27,7 +28,7 @@ int OnInit()
 //+------------------------------------------------------------------+
 void OnDeinit(const int reason)
   {
-  // Comment clearing make take few seconds to clear up depending on the processing time.
+  // Clearing comments may take few seconds to clear up depending on the processing time.
    ChartSetString(ChartID(), CHART_COMMENT, "");
   }
 //+------------------------------------------------------------------+
